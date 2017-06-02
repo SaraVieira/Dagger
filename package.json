@@ -13,6 +13,7 @@
   "dependencies": {
     "drag-drop": "^2.13.2",
     "electron": "^1.4.3",
+    "electron-reload": "^1.2.0",
     "marked": "^0.3.5"
   },
   "devDependencies": {
