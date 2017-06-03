@@ -1,45 +1,52 @@
-html {
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body, input {
-  font: menu;
-}
-
-textarea, input, div, button { outline: none; }
-
 .content {
   height: 100%;
   display: flex;
 }
 
-.rawMarkdown, .renderedHtml {
+.fullscreen {
+  position: absolute;
+  transform: translateX(-100%);
+  fill: #83879a;
+  width: 34px;
+  height: 34px;
+  top: 5px;
+  right: -25px;
+  cursor: pointer;
+}
+
+.rawMarkdownContainer, .renderedHtml {
   min-height: 100vh;
   max-width: 50%;
   flex-grow: 1;
   padding: 1em;
   overflow: scroll;
+  transition: all 200ms ease;
+  position: relative;
+}
+
+.rawMarkdownContainer {
+  padding: 0;
 }
 
 .rawMarkdown {
   font-size: 1.1em;
+  color: #fff;
   border: none;
-  background-color: rgb(238, 252, 250);
-  font-family: monospace;
+  padding: 1em;
+  background-color: #2D3144;
+  font-family: 'Source Code Pro';
   white-space: pre;
+  min-height: 100vh;
+  width: 100%;
+  overflow: scroll;
+}
+
+.fullMd {
+  & .rawMarkdownContainer {
+    min-width: 100%;
+  }
+
+  & .renderedHtml {
+    max-width: 0px;
+  }
 }

@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import dragDrop from 'drag-drop';
 import { render } from 'react-dom';
 import marked from 'marked';
+import 'style.css';
 
 const ipc = electron.ipcRenderer;
 const remote = electron.remote;

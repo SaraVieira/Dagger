@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.62.0",
+    "classnames": "^2.2.5",
     "drag-drop": "^2.13.2",
     "electron": "^1.6.10",
     "electron-debug": "^1.1.0",
@@ -27,6 +28,7 @@
     "react-dom": "^15.5.4",
     "react-hot-loader": "3.0.0-beta.6",
     "react-html-parser": "^1.0.3",
+    "react-icons": "^2.2.5",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
