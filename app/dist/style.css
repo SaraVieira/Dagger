@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body, input {
+  font: menu;
+}
+
+textarea, input, div, button { outline: none; }
+
+.style__content__ANlJZ {
+  height: 100%;
+  display: flex;
+}
+
+.style__rawMarkdown__2Q_2f, .style__renderedHtml__1VpPd {
+  min-height: 100vh;
+  max-width: 50%;
+  flex-grow: 1;
+  padding: 1em;
+  overflow: scroll;
+}
+
+.style__rawMarkdown__2Q_2f {
+  font-size: 1.1em;
+  border: none;
+  background-color: rgb(238, 252, 250);
+  font-family: monospace;
+  white-space: pre;
+}
+
+/*# sourceMappingURL=style.css.map*/
