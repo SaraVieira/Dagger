@@ -27,16 +27,16 @@ export default merge.smart(baseConfig, {
       // Extract all .global.css to style.css as is
       {
         test: /\.global\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: {loader: 'css-loader'},{ loader: 'postcss-loader' },
+        loader: ExtractTextPlugin.extract({
+          use: [{loader: 'css-loader'},{ loader: 'postcss-loader' }],
           fallback: 'style-loader',
         })
       },
       // Pipe other styles through css modules and append to style.css
       {
         test: /^((?!\.global).)*\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: {
+        loader: ExtractTextPlugin.extract({
+          use: [{
             loader: 'css-loader',
             options: {
               modules: true,
@@ -44,7 +44,7 @@ export default merge.smart(baseConfig, {
               localIdentName: '[name]__[local]__[hash:base64:5]',
             }
           },
-          { loader: 'postcss-loader' },
+          { loader: 'postcss-loader' }],
         }),
       },
       // WOFF Font
